@@ -43,6 +43,7 @@ void Fantastico(int Time)
             delay(Time);
         }
 }
+
 void loop()
 {
     Fantastico(50);
