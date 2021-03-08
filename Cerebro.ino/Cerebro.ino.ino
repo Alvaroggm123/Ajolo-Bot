@@ -1,25 +1,29 @@
-/**=================== | Ajolo-bot | ===================**/
-/*              Robot seguidor de personas              */
-/* Desarrollador: González Martínez Álvaro Gabriel      */
-/* Integrantes del equipo:                              */
-/*       González Martínez Álvaro Gabriel               */
-/*       Gutiérrez Carrales José Luis                   */
-/*       Gutiérrez Mora Aranza                          */
-/*                                                      */
-/* Descripción:                                         */
-/* Se trata de un robot que tendra como funciones prin- */
-/* ipales poder seguir a  personas,  esto lo realizara  */
-/* mediante  sensores ultrasonicos  que  le  permitiran */
-/* analizar si alguna persona se encuentra dentro de su */
-/* rango de visibilidad.                                */
-/**=================== | ========= | ===================**/
+/**=========================== | Ajolo-bot | ===========================**/
+/*                        Robot seguidor de personas                     */
+/* Desarrollador: González Martínez Álvaro Gabriel                       */
+/* Integrantes del equipo:                                               */
+/*       González Martínez Álvaro Gabriel                                */
+/*       Gutiérrez Carrales José Luis                                    */
+/*       Gutiérrez Mora Aranza                                           */
+/*                                                                       */
+/* Descripción:                                                          */
+/* Se  trata  de un  robot  que  tendrá  como funciones prinipales poder */
+/* seguir a  personas, esto lo realizará mediante  sensores ultrasonicos */
+/* que  le  permitiran analizar si alguna persona se encuentra dentro de */
+/* su rango de visibilidad.                                              */
+/* Para espesificar los pins a usar utilizaremos arreglos mxn, esto  nos */
+/* permitira identificar a los elementos  de la  manera:                 */
+/* Identificador[<N. Elemento>][<Adelante/Atras, Trigg/Ecco>];           */
+/**=========================== | ========= | ===========================**/
 
-// Espesificamos los puertos a utilizar
-/* Motores*/
+/**=========================== | Variables | ===========================**/
+/* |==|   Motores  |==| */
 const int Mo[2][2] = {{6, 7}, {8, 9}};
-const int Su[3][2] = {{2, 3}, {0, 0}, {0, 0}};
-// Variables para contadores
+/* |==|  Sensores  |==| */
+const int Su[3][2] = {{2, 3}, {0, 0}, {0, 0}}; /*   Sensor  Ultrasonico  */
+/* |==| Contadores |==| */
 int i = 0, j = 0;
+/**========================= | Fin Variables | =========================**/
 
 // Iniciamos con la configuracion de los motores y sensores
 void setup()
@@ -43,7 +47,6 @@ void Fantastico(int Time)
             delay(Time);
         }
 }
-
 void loop()
 {
     Fantastico(50);
