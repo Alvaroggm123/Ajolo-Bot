@@ -31,7 +31,7 @@ void setup()
     /*  Configuracion  de  pins  de  motores como  salida */
     for (i = 0; i < 2; i++)
         for (j = 0; j < 2; j++)
-            pinMode(Mo[i][j], OUTPUT); /* Pulso de salida */
+            pinMode(Mo[i][j], OUTPUT);
 
     /* Configuracion de  pins  de  sensores  ultrasonicos */
     for (i = 0; i < 3; i++)
@@ -63,7 +63,7 @@ void Fantastico(int Time)
 /**=========== | Fin  metodo Fantasito | ===========**/
 
 /* Funcion que regresa la distancia medida por el Su */
-/* espesificado por SuN (N. sensor).                   */
+/* espesificado por SuN (N. sensor).                 */
 float Distancia(int SuN)
 {
     /* Variable local para calculos */
