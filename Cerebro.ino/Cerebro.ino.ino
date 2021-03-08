@@ -76,7 +76,7 @@ float Distancia(int SuN)
     delayMicroseconds(10);
     digitalWrite(Su[SuN][0], 0);
     /* Lectura del Echo del sesor */
-    Duration = pulseIn(Su[SuN][1], HIGH);
+    Duration = pulseIn(Su[SuN][1], 1);
     /* Calculos para la distancia */
     return (Duration * 0.034 / 2.0);
 }
