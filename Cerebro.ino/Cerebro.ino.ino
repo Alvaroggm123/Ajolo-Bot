@@ -63,6 +63,7 @@ void Fantastico(int Time)
 /**=========== | Fin  metodo Fantasito | ===========**/
 
 /* Funcion que regresa la distancia medida por el Su */
+/* espesificado por SuN (N. sensor).                   */
 float Distancia(int SuN)
 {
     /* Variable local para calculos */
