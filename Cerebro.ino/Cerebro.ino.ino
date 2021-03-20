@@ -91,7 +91,7 @@ void ImprimeUltra()
 /**======================= | Área de ejecucion | =======================**/GIT
 void loop()
 {
-  digitalWrite(Mo[0][1], 1);
+  digitalWrite(Mo[0][1], 0);
   digitalWrite(Mo[1][1], 1);
   analogWrite(Mo[0][2], map(Distancia(0), 0, 20, 100, 255));
   analogWrite(Mo[1][2], map(Distancia(1), 0, 20, 100, 255));
