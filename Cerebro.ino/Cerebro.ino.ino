@@ -88,7 +88,7 @@ void ImprimeUltra()
 
 /**==================== | Fin funciones y metodos | ====================**/
 
-/**======================= | Área de ejecucion | =======================**/GIT
+/**======================= | Área de ejecucion | =======================**/
 void loop()
 {
   ImprimirUltra();
